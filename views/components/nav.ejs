@@ -1,0 +1,29 @@
+
+<div class="nav">
+
+<div class="ui inverted  menu " id="nav">
+<div class="ui container">
+      <div id= "title" class="item title" style="color:#00B5AD;font-size:2em;font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;font-weight: bold;"><%= name %><a id="titlea" href="/posts"></a></div>
+
+      <div class="right item">
+        <% if (user) { %>
+          <div class="ui floating dropdown  button">
+             <i class="icon bars"></i>
+             <div class="inverted menu">
+                  <a class="item" href="/author/<%= user._id %>">个人主页</a>
+                  <a class="item" href="/changeinfo">修改资料</a>
+                <div class="divider"></div>
+                  <a class="item" href="/posts/create">发表文章</a>
+                  <a class="item" href="/signout">Signout</a>
+              </div>
+           </div>
+        <% } else { %>
+          <a class="ui inverted button" href="/signin">Sign in</a>
+          <p>&nbsp&nbsp&nbsp</p>
+          <a class="ui inverted button" href="/signup">Sign Up</a>
+        <% } %>
+      </div>
+
+</div>
+</div>
+</div>

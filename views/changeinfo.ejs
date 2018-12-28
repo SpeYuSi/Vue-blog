@@ -1,0 +1,38 @@
+<%- include('header') %>
+<div class="ui grid">
+  <div class="four wide column">
+      <a class="avatar avatar-link"
+         href="#"
+         data-title="<%= user.name %> | <%= ({m: '男', f: '女', x: '保密'})[user.gender] %>"
+         data-content="<%= user.bio %>">
+        <img class="avatar" src="/img/<%= user.avatar %>">
+      </a>
+
+
+  </div>
+  <div class="eight wide column">
+    <form class="ui form segment" method="post" enctype="multipart/form-data">
+
+      <div class="field">
+        <label>性别</label>
+        <select class="ui compact selection dropdown" name="gender">
+          <option value="m">男</option>
+          <option value="f">女</option>
+          <option value="x">保密</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>头像</label>
+        <input type="file" name="avatar">
+      </div>
+
+      <div class="field">
+        <label>个人简介</label>
+        <textarea name="bio" rows="5"><%=user.bio%></textarea>
+      </div>
+      <input type="submit" class="ui positive button fluid" value="修改">
+    </form>
+  </div>
+</div>
+
+<%- include('footer') %>

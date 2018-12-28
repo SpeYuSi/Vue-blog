@@ -1,0 +1,114 @@
+/* ---------- 全局样式 ---------- */
+
+
+body {
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 40px;
+  background:#323232;
+}
+
+
+a:hover {
+  border-bottom: 3px solid #4fc08d;
+}
+
+
+
+.avatar {
+  border-radius: 3px;
+  width: 48px;
+  height: 48px;
+  float: right;
+}
+
+.title{
+  font-size: 2em;
+  color: #ffffff;
+}
+.maincontent{
+  position: absolute;;
+  left: 10%;
+  width: 70%;
+}
+.sidebar{
+
+  width: 19%;
+  position:absolute;
+  right:0;
+}
+
+.top.button{
+  position: fixed;
+  bottom: 60px;
+  right: -100px;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+
+}
+
+.top.button img{
+  display: block;
+  width: 40px;
+  height: 50px;
+
+}
+
+
+/* ---------- nav ---------- */
+
+.nav {
+  color: #999;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.nav .blank{
+  height: 50px;
+  background-color: black;
+}
+.nav h1 {
+  color: #4fc08d;
+  display: inline-block;
+  margin: 10px 0;
+}
+
+/* ---------- nav-setting ---------- */
+
+.nav-setting {
+
+  z-index: 999;
+}
+
+ .ui.dropdown.button {
+  padding: 10px 10px 0 10px;
+  background-color: grey !important;
+}
+
+.icon.bars{
+  color: #000;
+  width: 50px;
+  height: 30px;
+}
+
+/* ---------- post-content ---------- */
+
+
+.post-content h3 a {
+  color: #4fc08d !important;
+}
+
+.post-content .tag {
+  font-size: 13px;
+  margin-right: 5px;
+  color: #999;
+}
+
+.post-content .tag.right {
+  float: right;
+  margin-right: 0;
+}
+
+.post-content .tag.right a {
+  color: #999;
+}

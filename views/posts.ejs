@@ -1,0 +1,35 @@
+<%- include('header')%>
+<div class="maincontent">
+<% posts.forEach(function (post) { %>
+  <%- include('components/post-content', { post: post }) %>
+<% }) %>
+
+</div>
+<div class="sidebar">
+      <div class="ui inverted vertical  menu">
+        <a class="item">归档</a>
+        <div class="ui inverted vertical menu">
+        <% for(var date in file){%>
+        <%if(!author){%>
+          <a class="item" href="posts/date?date=<%= date%>"> <%= date%> </a>
+        <%}else{%>
+          <a class="item" href="<%=author%>/date?date=<%= date%>"> <%= date%> </a>
+        <%}%>
+        <%}%>
+        </div>
+
+        <a class="item">分类</a>
+        <div class="ui inverted vertical menu">
+        <% for(var type in types){%>
+        <%if(!author){%>
+          <a class="item" href="posts/type?type=<%= type%>"> <%= type%> </a>
+        <%}else{%>
+          <a class="item" href="<%=author%>/type?type=<%= type%>"> <%= type%> </a>
+        <%}%>
+        <%}%>
+        </div>
+
+      </div>
+</div>
+<div class="top  button" id="top"><img src="img/top.png"></img></div>
+<%- include('footer') %>
