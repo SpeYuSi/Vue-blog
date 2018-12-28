@@ -48,6 +48,7 @@ req.body: 解析后请求体需使用 body-parser，请求体为 {"name": "haha"
   
   创建模板
   **views/users.ejs**
+  ```html
   <!DOCTYPE html>
   <html>
     <head>
@@ -60,6 +61,7 @@ req.body: 解析后请求体需使用 body-parser，请求体为 {"name": "haha"
       <p>hello, <%= name %></p>
     </body>
   </html>
+  ```
   
   ejs 的 3 种常用标签：
   1. <% code %>：运行 JavaScript 代码，不输出
