@@ -62,9 +62,9 @@ req.body: 解析后请求体需使用 body-parser，请求体为 {"name": "haha"
   </html>
   
   ejs 的 3 种常用标签：
-  1.<% code %>：运行 JavaScript 代码，不输出
-  2.<%= code %>：显示转义后的 HTML内容
-  3.<%- code %>：显示原始 HTML 内容
+  1. <% code %>：运行 JavaScript 代码，不输出
+  2. <%= code %>：显示转义后的 HTML内容
+  3. <%- code %>：显示原始 HTML 内容
   
   在使用ejs模板时，将模板拆成可以复用的片段使用 <%- include('header') %>来复用
   
